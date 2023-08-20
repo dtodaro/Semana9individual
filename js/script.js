@@ -30,7 +30,7 @@ function showList(array) {
   container.innerHTML = "";
   // Más info de forEach => https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
   array.forEach((element) => {
-    if (typeof element === "string") {
+    if (typeof element === "string") { //filtramos que cada elemento sea string
 
       const li = document.createElement("li");
     li.appendChild(document.createTextNode(element));
