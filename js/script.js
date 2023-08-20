@@ -44,7 +44,8 @@ function showList(array) {
 }
 
 document.addEventListener("DOMContentLoaded", (e) => {
-  strangeArray.sort(); //ordena alfabeticamente la lista
+  strangeArray.sort(function(a, b){
+    return a.localeCompare(b);}); //ordena alfabeticamente la lista
   showList(strangeArray)
 
 });
